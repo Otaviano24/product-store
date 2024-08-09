@@ -3,7 +3,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { filter, Observable } from 'rxjs';
-import { ProductsService } from './products.service';
 
 @Component({
   selector: 'app-comfirmation-dialog',

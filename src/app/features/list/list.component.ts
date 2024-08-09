@@ -5,9 +5,7 @@ import { CardComponent } from './components/card/card.component';
 import { Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { filter } from 'rxjs';
-import {
-  ComfirmationDialogService,
-} from '../../shared/services/comfirmation-dialog.service';
+import { ComfirmationDialogService } from '../../shared/services/comfirmation-dialog.service';
 
 @Component({
   selector: 'app-list',
@@ -21,6 +19,7 @@ export class ListComponent {
 
   productsService = inject(ProductsService);
   router = inject(Router);
+
   comfirmationDialogService = inject(ComfirmationDialogService);
 
   ngOnInit() {
@@ -32,6 +31,7 @@ export class ListComponent {
   onEdit(product: Product) {
     this.router.navigate(['/edit-product', product.id]);
   }
+
   onDelete(product: Product) {
     this.comfirmationDialogService
       .openDialog()

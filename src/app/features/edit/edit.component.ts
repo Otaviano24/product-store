@@ -6,7 +6,7 @@ import {
   ActivatedRoute,
 } from '@angular/router';
 import { ProductsService } from '../../shared/services/products.service';
-import { FormComponent } from '../../shered/components/form/form.component';
+import { FormComponent } from '../../shared/components/form/form.component';
 
 @Component({
   selector: 'app-edit',

@@ -3,7 +3,7 @@ import { _MatInternalFormField } from '@angular/material/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ProductsService } from '../../shared/services/products.service';
 import { Router } from '@angular/router';
-import { FormComponent } from '../../shered/components/form/form.component';
+import { FormComponent } from '../../shared/components/form/form.component';
 import { Product } from '../../shared/interfaces/product.interface';
 
 @Component({
