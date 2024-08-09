@@ -1,6 +1,6 @@
+import { Product } from './../../shared/interfaces/product.interface';
 import { ProductsService } from './../../shared/services/products.service';
 import { Component, inject } from '@angular/core';
-import { Product } from '../../shared/interfaces/product.interface';
 import { CardComponent } from './components/card/card.component';
 import { Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,7 +24,7 @@ export class ListComponent {
     });
   }
 
-  onEdit() {
-    this.router.navigateByUrl('/edit-product');
+  onEdit(product: Product) {
+    this.router.navigate(['/edit-product', product.id]);
   }
 }
