@@ -1,15 +1,19 @@
 <div class="action-container">
-    <a mat-raised-button color="primary" [routerLink]="[ '/create-product',]">Criar produto</a>
+  <a mat-raised-button color="primary" [routerLink]="['/create-product']"
+    >Criar produto</a
+  >
 </div>
 
-@for (product of products(); track product.id){
-@defer (on immediate) {
-<app-card [product]="product" (edit)="onEdit(product)" (delete)="onDelete(product)"></app-card>
+@for (product of products(); track product.id){ @defer (on immediate) {
+<div class="item-content">
+  <app-card
+    [product]="product"
+    (edit)="onEdit(product)"
+    (delete)="onDelete(product)"
+  >
+  </app-card>
+</div>
 
-}
-}
-@empty {
-@defer (on immediate) {
+} } @empty { @defer (on immediate) {
 <app-no-items></app-no-items>
-}
-}
+} }
