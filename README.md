@@ -1,6 +1,8 @@
 # ProductStore
 
-Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.3.8.
+![tela_inical](https://github.com/user-attachments/assets/c32561a8-52ed-42b0-a3ee-d231279feae6)
+
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.3.8. É um projeto web simples de um gerenciador de produtos onde você pode criar, editar e deletar o produto, a forma de aprendizagem foi através do youtube no mini cruso gratuito de angular feito pela `Code Dimension` [Code Dimension YouTube](https://www.youtube.com/@code.dimension/featured).
 
 ## Servidor de desenvolvimento
 
